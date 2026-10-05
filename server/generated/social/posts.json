@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": "post_1791227353603_82009e36",
+      "snapshotId": "apimitra-india-06-10-2026",
+      "city": "India",
+      "templateId": "gold-social-47",
+      "templateName": "Market Update",
+      "templateIndex": 47,
+      "format": "portrait",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "imagePath": "D:\\gold_prices\\server\\generated\\social\\2026\\10\\06\\gold-india-24k-2026-10-06-0039-social-47-portrait.png",
+      "imageUrl": "/api/social-posts/post_1791227353603_82009e36/image",
+      "staticUrl": "/generated/social/2026/10/06/gold-india-24k-2026-10-06-0039-social-47-portrait.png",
+      "filename": "gold-india-24k-2026-10-06-0039-social-47-portrait.png",
+      "price24K": 14840,
+      "price22K": 13602.8,
+      "price18K": 11130.3,
+      "change24K": -15,
+      "changePercent24K": -0.1,
+      "source": "API Mitra",
+      "sourceLabel": "API MITRA MARKET RATE",
+      "date": "06/10/2026",
+      "time": "Official Release IST",
+      "isAutoHourly": true,
+      "generatedAt": "2026-10-05T19:09:13.603Z"
+    },
+    {
+      "id": "post_1791226677156_971317c9",
+      "snapshotId": "apimitra-hyderabad-06-10-2026",
+      "city": "Hyderabad",
+      "templateId": "template-29",
+      "templateName": "Silk & Gold",
+      "templateIndex": 29,
+      "format": "portrait",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "imagePath": "D:\\gold_prices\\server\\generated\\social\\2026\\10\\06\\gold-india-24k-2026-10-06-0027-template-29-portrait.png",
+      "imageUrl": "/api/social-posts/post_1791226677156_971317c9/image",
+      "staticUrl": "/generated/social/2026/10/06/gold-india-24k-2026-10-06-0027-template-29-portrait.png",
+      "filename": "gold-india-24k-2026-10-06-0027-template-29-portrait.png",
+      "price24K": 14835,
+      "price22K": 13599.1,
+      "price18K": 11126.6,
+      "change24K": -15,
+      "changePercent24K": -0.1,
+      "source": "API Mitra",
+      "sourceLabel": "API MITRA MARKET RATE",
+      "date": "06/10/2026",
+      "time": "Official Release IST",
+      "isAutoHourly": true,
+      "generatedAt": "2026-10-05T18:57:57.156Z"
+    }
+  ],
+  "recentTemplateIds": [
+    "template-29",
+    "gold-social-47"
+  ]
+}

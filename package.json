@@ -1,0 +1,19 @@
+{
+  "name": "gold-rate-india-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gold Rate India - Full-stack hourly estimated gold rate tracking application",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n \"SERVER,CLIENT\" -c \"cyan.bold,yellow.bold\" \"npm run dev --workspace=server\" \"npm run dev --workspace=client\"",
+    "start": "node server/src/server.js",
+    "build": "npm run build --workspace=client",
+    "install:all": "npm install && npm install --workspace=server && npm install --workspace=client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

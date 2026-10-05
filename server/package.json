@@ -1,0 +1,24 @@
+{
+  "name": "gold-rate-india-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend API for Gold Rate India with hourly cache and rate calculation",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "node-cron": "^3.0.3",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

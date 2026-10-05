@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+}
+
+/* =========================================================================
+   LUXURY ARCHITECTURAL BACKGROUNDS & AMBIENT AURORAS
+   ========================================================================= */
+
+/* Deep Royal Midnight Vault in Dark Mode */
+.dark body {
+  background-color: #060911;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(212, 175, 55, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(30, 58, 138, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(15, 23, 42, 0.5) 0px, transparent 100%),
+    radial-gradient(at 100% 100%, rgba(212, 175, 55, 0.05) 0px, transparent 50%),
+    radial-gradient(rgba(212, 175, 55, 0.07) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 32px 32px;
+  background-attachment: fixed;
+}
+
+/* Silky Champagne Ivory in Light Mode */
+body {
+  background-color: #F8F6F0;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(212, 175, 55, 0.12) 0px, transparent 45%),
+    radial-gradient(at 100% 0%, rgba(245, 230, 200, 0.35) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(255, 255, 255, 0.6) 0px, transparent 100%),
+    radial-gradient(rgba(180, 140, 40, 0.06) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 32px 32px;
+  background-attachment: fixed;
+}
+
+/* Floating Ambient Aura */
+.ambient-glow-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+  opacity: 0.6;
+  animation: floatSlow 12s ease-in-out infinite alternate;
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+  100% { transform: translateY(10px) scale(0.98); }
+}
+
+/* =========================================================================
+   TEXT GRADIENTS & HIGH-END TYPOGRAPHY
+   ========================================================================= */
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FDE68A 0%, #D4AF37 35%, #F59E0B 75%, #B45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-subtle {
+  background: linear-gradient(135deg, #ECC874 0%, #C5A059 50%, #9F7A34 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =========================================================================
+   FROSTED GLASS & LUXURY CARD SYSTEM
+   ========================================================================= */
+
+.frosted-glass {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04), 0 4px 12px -2px rgba(0, 0, 0, 0.02);
+}
+
+.dark .frosted-glass {
+  background: rgba(11, 17, 30, 0.78);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
+}
+
+/* Highlighted Gold Border Card */
+.gold-card-hero {
+  position: relative;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 12px 35px -8px rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.dark .gold-card-hero {
+  background: linear-gradient(180deg, rgba(20, 26, 42, 0.85) 0%, rgba(11, 16, 28, 0.92) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.7), 0 0 25px -5px rgba(212, 175, 55, 0.15);
+}
+
+.gold-card-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 45px -10px rgba(212, 175, 55, 0.25);
+  border-color: rgba(212, 175, 55, 0.6);
+}
+
+/* Subtle Card Glow on Hover */
+.luxury-interactive {
+  transition: all 0.25s ease-out;
+}
+.luxury-interactive:hover {
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.6);
+}
